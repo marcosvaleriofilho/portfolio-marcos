@@ -10,6 +10,17 @@ import { FaDocker } from "react-icons/fa";
 import { SiMetabase } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import {motion, transform} from "framer-motion";
+
+const iconVariants = (duration) =>({
+  initial: {y: -10},
+  transition:{
+    duration: duration,
+    ease: "linear",
+    repeat: Infinity,
+    repeatType: "reverse" 
+  }
+})
 
 const techData = [
   { icon: <RiReactjsLine />, name: 'React', color: 'text-cyan-400', bgColor: 'bg-cyan-400' },
@@ -29,10 +40,11 @@ const techData = [
 const Technologies = () => {
   return (
     <div className="border-b-4 border-neutral-700 border-opacity-5 pb-24">
-      <h2 className="my-20 text-center text-4xl">Tecnologias</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2">
+      <motion.h2 initial={{y: -50, opacity: 0}} animate={{y:0, opacity:1}} transition={{duration: 1, delay: 1}} className="my-20 text-center text-4xl">Tecnologias</motion.h2>
+      <motion.div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2">
         {techData.map((tech, index) => (
-          <div
+          <motion.div
+          whileInView={{opacity: 1, y: 0,}} initial={{opacity: 0, y: 100}} transition={{duration: 1, delay: .5}}
             key={index}
             className={`relative flex flex-col items-center space-y-2 rounded-2xl bg-neutral-800 bg-opacity-15 p-4 overflow-hidden group`}
           >
@@ -45,9 +57,9 @@ const Technologies = () => {
             <span className={`relative z-10 text-sm sm:text-base lg:text-lg font-semibold transition-colors group-hover:text-white`}>
               {tech.name}
             </span>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
