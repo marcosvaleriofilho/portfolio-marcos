@@ -2,75 +2,61 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Junho/2024 - Presente",
+    role: "Iniciação científica",
+    company: "Embrapa Agricultura Digital",
+    description: `Atuando na análise de dados e desenvolvimento de dashboards utilizando Metabase via Docker, com uma base de dados específica do projeto. Também faço uso do PostgreSQL para manipulação e visualização de dados, contribuindo diretamente para o acompanhamento e a apresentação dos resultados da pesquisa.`,
+    technologies: ["Docker", "PostgreSQL", "Metabase", "Apache Superset"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "Agosto/2023 - Maio/2024",
+    role: "Estágio em Engenharia de Software",
+    company: "Embrapa Agricultura Digital",
+    description: `Desenvolvimento de uma aplicação mobile híbrida em React Native com foco em Offline First, utilizando Expo, para controle do ciclo de vida do gado leiteiro. Atuei principalmente no front-end, sendo responsável pela criação de rotas, design de UI/UX, responsividade e renderizações condicionais. Também colaborei no desenvolvimento do back-end, incluindo a implementação de uma máquina de estados. Trabalhei em um time colaborativo composto por quatro membros (eu, dois estagiários e nosso supervisor), o que me proporcionou valiosa experiência em trabalho em equipe.`,
+    technologies: ["React Native", "TypeScript", "Expo", "SQLite","Android","iOS"],
   },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Portfolio Website",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Um site de portfólio pessoal apresentando projetos, habilidades e informações de contato.",
+    technologies: ["HTML", "TailwindCSS", "React", "GitHub", "Vercel", ],
   },
   {
-    title: "Task Management App",
+    title: "SportIn",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Um projeto ainda em desenvolvimento sobre uma plataforma para gerar conexões de atletas do mundo inteiro. Ideia inspirada a partir das olimpíadas de Paris.",
+    technologies: ["Angular", "Java SpringBoot"],
   },
   {
-    title: "Portfolio Website",
+    title: "ReconAI",
+    image: project5,
+    description:
+      "Site desenvolvido para recomendação de roupas através de IA, que foi o conteúdo obrigatório para o Projeto Integrador V da faculdade, onde foi desenvolvida a IA através da similaridade de cossenos.",
+    technologies: ["HTML", "CSS", "JavaScript","Flask","Python","PostgreSQL"],
+  },
+  {
+    title: "NutriMoo",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Projeto que consiste em geração de dieta para o gado. Desenvolvido para o Projeto Integrador IV da faculdade, onde fiquei mais focado no desenvolvimento front-end. Também, neste projeto, foi desenvolvido um servidor em Java com cliente integrado ao front-end, e uma API em SpringBoot.",
+    technologies: ["React Native", "Expo", "JavaScript", "Java","Java SpringBoot","MongoDB"],
   },
   {
-    title: "Blogging Platform",
+    title: "Roda da Reprodução - Balde Cheio - Embrapa",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Minha primeira participação em um projeto profissional. Aplicação em React Native com foco em Offline First, utilizando Expo, para controle do ciclo de vida do gado leiteiro.",
+    technologies: ["React Native", "Expo", "TypeScript","SQLite","Android","iOS"],
   },
 ];
-
-export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
-};
