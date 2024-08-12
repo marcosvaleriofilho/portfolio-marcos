@@ -16,31 +16,24 @@ const Contact = () => {
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5, delay: 1 }}
+          transition={{ duration: 0.5, delay: .5 }}
           className="my-4"
         >
-          Campinas, São Paulo, Brasil
+          Chácara Primavera, Campinas, São Paulo, Brasil
         </motion.p>
+      
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5, delay: 1 }}
-          className="my-4"
-        >
-          Rua Emerson José Moreira - Chácara Primavera
-        </motion.p>
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5, delay: 1 }}
+          transition={{ duration: 0.5, delay: .5 }}
           className="my-4"
         >
           +55 19 981740602
         </motion.p>
         <motion.a
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5, delay: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -50 }}
+          transition={{ duration: 0.5, delay: .5 }}
           href="#"
           className="border-b"
         >
