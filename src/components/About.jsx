@@ -8,7 +8,7 @@ const About = () => {
         <span className="text-neutral-300 text-opacity-20"> Mim</span>
       </motion.h2>
       <div className="flex flex-wrap items-center justify-center"> 
-        <motion.div  whileInView={{opacity: 1, y: 0,}} initial={{opacity: 0, y: 100}} transition={{duration: 1, delay: 1.5}} className='w-full'>
+        <motion.div  whileInView={{opacity: 1, y: 0,}} initial={{opacity: 0, y: 100}} transition={{duration: 1, delay: 1}} className='w-full'>
           <div className='flex items-center justify-center'>
             <p className='max-w-6xl text-center my-10 mb-20'>
               Estudante de Engenharia de Software, atualmente cursando 6º semestre na PUC-Campinas.
