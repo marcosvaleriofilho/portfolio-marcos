@@ -1,5 +1,5 @@
 import profilePic from '../assets/marcos.png';
-import cvFile from '../assets/[PT-BR]CVMarcosValerio.pdf';
+import cvFile from '../assets/[PT-BR]CVMarcosValerio-2.pdf';
 import {motion} from "framer-motion";
 
 const Hero = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
               Marcos Antonio Valério Filho
             </motion.h1>
             <motion.span variants={container(0.5)} initial="hidden" animate="visible" className="my-8 text-white bg-clip-text text-3xl tracking-tight text-transparent">
-              Engenheiro de Software
+              Estudante de Engenharia de Software
             </motion.span>
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
               <motion.button 
