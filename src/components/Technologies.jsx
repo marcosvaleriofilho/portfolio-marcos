@@ -46,7 +46,7 @@ const Technologies = () => {
           <motion.div
           whileInView={{opacity: 1, y: 0,}} initial={{opacity: 0, y: 100}} transition={{duration: 1, delay: .5}}
             key={index}
-            className={`relative flex flex-col items-center space-y-2 rounded-2xl bg-neutral-800 bg-opacity-15 p-4 overflow-hidden group`}
+            className={`relative flex flex-col items-center space-y-2 rounded-2xl bg-neutral-900 bg-opacity-15 p-4 overflow-hidden group`}
           >
             <div
               className={`absolute inset-0 ${tech.bgColor} opacity-0 group-hover:opacity-50 transition-opacity`}

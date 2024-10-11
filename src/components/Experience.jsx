@@ -1,5 +1,5 @@
 import { EXPERIENCES } from "../constants";
-import {motion} from "framer-motion"
+import {motion} from "framer-motion";
 
 const Experience = () => {
   return (
@@ -8,20 +8,26 @@ const Experience = () => {
             <div>
                 {EXPERIENCES.map((experience,index) => (
                     <div key={index} className="items-center py-8 mb-8 flex flex-wrap lg:justify-center">
-                        <motion.div whileInView={{opacity: 1, x: 0,}} initial={{opacity: 0, x: -100}} transition={{duration: 1, delay: .5}} className="w-full lg:w-1/4">
+                        <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1, delay: .5}} className="w-full lg:w-1/4">
                             <p className="mb-2 text-md font-semibold text-neutral-100">{experience.year}</p>
                         </motion.div>
-                        <motion.div whileInView={{opacity: 1, x: 0,}} initial={{opacity: 0, x: 100}} transition={{duration: 1, delay: .5}} className="w-full max-w-xl lg:w-3/4">
+                        <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: 100}} transition={{duration: 1, delay: .5}} className="w-full max-w-xl lg:w-3/4">
                             <h6 className="mb-2 text-neutral-100 font-semibold">
                                 {experience.role} -{" "}
-                                <span className="text-md text-green-600"> 
+                                <span 
+                                    className={`text-md ${
+                                        experience.company === "Instituto de Pesquisas Eldorado" 
+                                        ? "text-orange-600" // Cor laranja para Eldorado
+                                        : "text-green-600"  // Cor verde para outras empresas
+                                    }`}
+                                >
                                     {experience.company}
                                 </span>
                             </h6>
                             <p className="mb-4 text-neutral-500">{experience.description}</p>
-                            {experience.technologies.map((tech,index) =>(
+                            {experience.technologies.map((tech, index) => (
                                 <span key={index} className="text-sm font-medium mr-2 rounded bg-neutral-800 bg-opacity-25 px-2 py-1">{tech}</span>
-                            ) )}
+                            ))}
                         </motion.div>
                     </div>
                 ))}
@@ -30,4 +36,4 @@ const Experience = () => {
   );
 };
 
-export default Experience
+export default Experience;

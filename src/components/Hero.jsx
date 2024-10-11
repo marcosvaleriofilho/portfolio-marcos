@@ -1,6 +1,6 @@
 import profilePic from '../assets/marcos.png';
 import cvFile from '../assets/[PT-BR]CVMarcosValerio-2.pdf';
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -11,11 +11,11 @@ const Hero = () => {
   };
 
   const container = (delay) => ({
-    hidden: {x: -100, opacity:0},
+    hidden: { x: -100, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,
-      transition: {duration: 0.5, delay: delay}
+      transition: { duration: 0.5, delay: delay }
     }
   })
 
@@ -31,18 +31,18 @@ const Hero = () => {
               Estudante de Engenharia de Software
             </motion.span>
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
-              <motion.button 
-              variants={container(1)} initial="hidden" animate="visible"
-                onClick={scrollToContact} 
-                className="border-4 border-neutral-300 border-opacity-5 text-white font-bold py-3 px-4 rounded hover:bg-blue-900 hover:bg-opacity-50 hover:text-white transition-colors duration-300 mr-4"
+              <motion.button
+                variants={container(1)} initial="hidden" animate="visible"
+                onClick={scrollToContact}
+                className="border-4 border-purple-300 border-opacity-5 text-white font-bold py-3 px-4 rounded hover:bg-blue-900 hover:bg-opacity-50 hover:text-white transition-colors duration-300 mr-4"
               >
                 Entre em contato!
               </motion.button>
-              <motion.a 
+              <motion.a
                 variants={container(1)} initial="hidden" animate="visible"
-                href={cvFile} 
-                download="[PT-BR]CVMarcosValerio-2.pdf" 
-                className="my-8 mt-4 lg:mt-0 text-white font-semibold bg-opacity-5 py-4 px-4 rounded bg-neutral-300 hover:bg-blue-900 hover:bg-opacity-50"
+                href={cvFile}
+                download="[PT-BR]CVMarcosValerio-2.pdf"
+                className="my-8 mt-4 lg:mt-0 text-white font-semibold bg-opacity-5 py-4 px-4 rounded bg-purple-300 hover:bg-blue-900 hover:bg-opacity-50"
               >
                 Baixe meu CV
               </motion.a>
@@ -51,11 +51,17 @@ const Hero = () => {
         </div>
         <div className='w-full lg:w-1/2 lg:p-8'>
           <div className='flex justify-center'>
-            <motion.img initial={{x: 100, opacity: 0}} animate={{x:0, opacity:1}} transition={{duration: 1, delay: 1.2}}
-            src={profilePic} alt='Marcos Filho'/>
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+              src={profilePic}
+              alt='Marcos Filho'
+              className='w-80 h-80 lg:w-96 lg:h-96 max-w-full max-h-full' // Tamanho intermediário
+            />
           </div>
         </div>
-      </div>    
+      </div>
     </div>
   )
 }

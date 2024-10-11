@@ -11,7 +11,7 @@ const App = () => {
     <div className="overflow-x-hidden text-neutral-300 antialised selection:bg-cyan-300 selection:text-cyab=900">
       <div className="fixed top-0 -z-10 h-full w-full">
      
-      <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(50,50,150,0.5),rgba(10,10,20,0.8))]"></div>
+      <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(100,50,150,0.6),rgba(30,30,60,0.9))]"></div>
 
       </div>
 

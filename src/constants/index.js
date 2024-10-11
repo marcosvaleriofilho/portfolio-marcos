@@ -7,10 +7,17 @@ import project5 from "../assets/projects/project-5.jpg";
 
 export const EXPERIENCES = [
   {
-    year: "Junho/2024 - Presente",
+    year: "Outubro/2024 - Presente",
+    role: "Estagiário em IA",
+    company: "Instituto de Pesquisas Eldorado",
+    description: `Estagiário em Inteligência Artificial.`,
+    technologies: ["Python", "LangChain", "Streamlit","Inteligência Artificial"],
+  },
+  {
+    year: "Junho/2024 - Outubro/2024",
     role: "Iniciação científica",
     company: "Embrapa Agricultura Digital",
-    description: `Atuando na análise de dados e desenvolvimento de dashboards utilizando Metabase via Docker, com uma base de dados específica do projeto. Também faço uso do PostgreSQL para manipulação e visualização de dados, contribuindo diretamente para o acompanhamento e a apresentação dos resultados da pesquisa.`,
+    description: `Atuando na análise de dados e desenvolvimento de dashboards utilizando Metabase, com uma base de dados específica do projeto. Também faço uso do PostgreSQL para manipulação e visualização de dados, contribuindo diretamente para o acompanhamento e a apresentação dos resultados da pesquisa.`,
     technologies: ["Docker", "PostgreSQL", "Metabase", "Apache Superset"],
   },
   {
@@ -32,11 +39,11 @@ export const PROJECTS = [
     technologies: ["HTML", "TailwindCSS", "React", "GitHub", "Vercel", ],
   },
   {
-    title: "SportIn",
+    title: "TravelTab",
     image: project2,
     description:
-      "Um projeto ainda em desenvolvimento sobre uma plataforma para gerar conexões de atletas do mundo inteiro. Ideia inspirada a partir das olimpíadas de Paris.",
-    technologies: ["Angular", "Java SpringBoot"],
+      "Projeto em desenvolvimento para o Projeto Integrador VI da faculdade, aplicativo de gestão de viagens em grupo. Desenvolvido em React Native com uma API SpringBoot com um banco MongoDB.",
+    technologies: ["React Native","Expo","TypeScript","MongoDB", "Java SpringBoot"],
   },
   {
     title: "ReconAI",
