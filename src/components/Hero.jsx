@@ -1,6 +1,6 @@
 import profilePic from '../assets/marcos.png';
-import cvFile from '../assets/[PT-BR]CVMarcosValerio-2.pdf';
-import { motion } from "framer-motion";
+import cvFile from '../assets/PT-BR-CVMarcosValerio.pdf';
+import {motion} from "framer-motion";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -40,9 +40,9 @@ const Hero = () => {
               </motion.button>
               <motion.a
                 variants={container(1)} initial="hidden" animate="visible"
-                href={cvFile}
-                download="[PT-BR]CVMarcosValerio-2.pdf"
-                className="my-8 mt-4 lg:mt-0 text-white font-semibold bg-opacity-5 py-4 px-4 rounded bg-purple-300 hover:bg-blue-900 hover:bg-opacity-50"
+                href={cvFile} 
+                download="PT-BR-CVMarcosValerio.pdf" 
+                className="my-8 mt-4 lg:mt-0 text-white font-semibold bg-opacity-5 py-4 px-4 rounded bg-neutral-300 hover:bg-blue-900 hover:bg-opacity-50"
               >
                 Baixe meu CV
               </motion.a>
